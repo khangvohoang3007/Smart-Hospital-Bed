@@ -43,16 +43,21 @@ Install these via **Library Manager** (`Ctrl + Shift + I`):
 
 ## WIRING DIAGRAM
 
-| Component | Pin on ESP8266 | Function |
+| Component | Pin on ESP32 | Function |
 | --- | --- | --- |
-| **OLED (SDA)** | **D2** | I2C Data |
-| **OLED (SCL)** | **D1** | I2C Clock |
-| **DHT11 Sensor** | **D5** | Temperature & Humidity Data |
-| **MQ-135 Sensor** | **A0** | Analog Gas Signal |
-| **Push Button** | **D4** | Display Toggle |
-| **Warning LED** | **D3** | Pollution Alert |
+| **OLED Display** | **SDA (21), SCL (22)** | I2C: Displays Heart Rate, SpO2, and system status. |
+| **MAX30100 Sensor** | **SDA (21), SCL (22)** | I2C: Monitors Heart Rate and Blood Oxygen levels. |
+| **Voice Sensor** | **SDA (21), SCL (22)** | I2C: Processes offline voice commands for bed control. |
+| **Ultrasonic Sensor** | **Trig (13), Echo (12)** | Measures distance to detect patient presence on bed. |
+| **Head Servo** | **GPIO 17** | Actuator for adjusting the head/back section angle. |
+| **Leg Servo** | **GPIO 16** | Actuator for adjusting the leg section angle. |
+| **OLED Switch** | **GPIO 23** | Button to toggle display modes (Heart Rate / SpO2). |
+| **System Switch** | **GPIO 34** | Button to Enable/Disable the monitoring system. |
+| **Call Help Button** | **GPIO 26** | Emergency button for the patient to call for help. |
+| **Status LED** | **GPIO 5** | LED indicator for the system's "Waiting" state. |
+| **Buzzer** | **GPIO 19** | Audible alarm for emergency health or fall alerts. |
 
-*Note: Ensure your ESP8266 board is powered via USB or a stable 5V source.*
+*Note: Ensure your ESP32 board is powered via USB or a stable 5V source.*
 
 
 ## CONFIGURATION AND CODE UPLOADING
