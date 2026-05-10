@@ -64,17 +64,18 @@ Install these via **Library Manager** (`Ctrl + Shift + I`):
 
 Update your Blynk Template ID, Name, and Auth Token in the code section below.
 ```cpp
-//Paste your Blynk config here
-#define BLYNK_TEMPLATE_ID "...."
-#define BLYNK_TEMPLATE_NAME "SENSOR NODE1"
+////// Type your Blynk config here
+#define BLYNK_TEMPLATE_ID "....."
+#define BLYNK_TEMPLATE_NAME "SMART HOSPITAL BED"
 #define BLYNK_AUTH_TOKEN "....."
+//////////////////////////
 ```
 *Note: Please refer to the documentation in docs for detailed Blynk setup instructions.*
 
 Enter your Wi-Fi SSID and Password in the code section below.
 ```cpp
-char ssid[] = "type here";  // type your wifi name
-char pass[] = "type here";  // type your wifi password
+const char* ssid = "type here"; // type your wifi name
+const char* pass = "type here"; // typur wifi password
 ```
 
 ### Code Uploading Guide
@@ -86,7 +87,7 @@ char pass[] = "type here";  // type your wifi password
 6. Open the **Serial Monitor** (baud rate: `115200`) to check the logs
 
 ## VIDEO PERFORMANCE
-[![THE AIR QUALITY MONITORING SYSTEM USING ESP8266 AND BLYNK SERVER MONITORING](https://ytcards.demolab.com/?id=SAjFOtDFIkM&title=THE+AIR+QUALITY+MONITORING+SYSTEM+USING+ESP8266+AND+BLYNK+SERVER+MONITORING&lang=en&timestamp=1778266005&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=450&border_radius=5)](https://www.youtube.com/watch?v=SAjFOtDFIkM)
+[![SMART HOSPITAL BED MODEL USING ESP32 COMBINED IOT BLYNK](https://ytcards.demolab.com/?id=peCON6crhVg&title=SMART+HOSPITAL+BED+MODEL+USING+ESP32+COMBINED+IOT+BLYNK&lang=en&timestamp=1778266005&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=450&border_radius=5)](https://www.youtube.com/watch?v=peCON6crhVg)
 
 ### 🚀 Enjoy your Air Quality System!
 Thanks for checking out my project! If it helps you breathe easier (or just pass your graduation), my job here is done. Feel free to contribute, report issues, or give it a ⭐ if you liked it! 😊
