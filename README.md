@@ -1,29 +1,27 @@
-# THE AIR QUALITY MONITORING SYSTEM USING ESP8266 AND BLYNK SERVER MONITORING
+# SMART HOSPITAL BED MODEL USING ESP32 COMBINED IOT BLYNK
 
 ## OVERVIEW
-Hello! This is a ***hands-on guide*** to help you build your own ***Air Quality Monitoring System using ESP8266 and Blynk Server***.
+Hello! This is a ***hands-on guide*** to help you build your own ***Smart Hospital Bed Model using ESP32 and Blynk IoT.***
 
-The system features 2 sensor nodes for data collection and transmission to the Blynk Server.
+The system architecture and its planned functionalities are outlined below:
+* **Sensor Block (Inputs):** Collects vitals, bed position, and emergency signals.
+* **Voice Control (Inputs):** Enables hands-free bed adjustments via a **Mic** module.
+* **Motor Block (Outputs):** Controls the physical movement and positioning of the bed.
+* **Display Block (Outputs):** Provides a local visual readout of system status.
+* **Processing Block:** The "brain" (ESP32) that coordinates all system operations.
+* **Remote Monitoring:** Syncs data to **Blynk Server** for tracking on smartphones/PCs.
 <p align="center">
   <img src="hardware/system_blockDiagram.png" width="500" alt="System Block Diagram">
   <br>
 </p>
 
-Each node is designed with the following core modules:
-* **Processing & Communication:** ESP8266 NodeMCU (Wi-Fi enabled).
-* **Sensing Unit:** MQ-135 (Gas/Air Quality) and DHT11 (Temperature & Humidity).
-* **Display Unit:** 0.96" OLED Display for local real-time monitoring.
-<p align="center">
-  <img src="hardware/sensorNode_structure.png" width="500" alt="Sensor Node Structure">
-  <br>
-</p>
-
 ## FEATURES
-* **Dual-Layer Monitoring:** Real-time data visualization via local **OLED display** and remote **Blynk IoT platform**.
-* **Multi-Sensor Integration:** High-precision tracking of **Air Quality (MQ-135)**, **Temperature**, and **Humidity (DHT11)**.
-* **Instant Alert System:** Automatic push notifications and mobile alerts for significant changes in air pollution levels.
-* **Smart Connectivity:** Seamless Wi-Fi integration using **ESP8266** for stable cloud data synchronization.
-* **User-Centric Design:** Optimized UI/UX on Blynk app for intuitive environmental tracking.
+* **Smart Sensor Integration:** Real-time tracking of vitals using **MAX30100 (Heart Rate & SpO2)** and environmental data.
+* **Offline Voice Command:** Hands-free bed control via **DFRobot Offline Voice Recognition**, no internet required for local actions.
+* **Dual Monitoring System:** Visual feedback on a local **OLED display** and remote data sync via **Blynk IoT**.
+* **Robust Hardware Design:** Custom-designed schematic optimized for **ESP32** to ensure stability and safety.
+* **Smart Connectivity:** Seamless Wi-Fi integration with the **Blynk Server** for instant mobile notifications and control.
+* **Fault-Tolerant System:** Designed with built-in logic to handle common hardware errors and connection drops effectively.
 
 ## COMPONENTS USED
 | Component | Function |
