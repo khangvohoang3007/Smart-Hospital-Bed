@@ -53,10 +53,7 @@ Install these via **Library Manager** (`Ctrl + Shift + I`):
 | **Warning LED** | **D3** | Pollution Alert |
 
 *Note: Ensure your ESP8266 board is powered via USB or a stable 5V source.*
-<p align="center">
-  <img src="hardware/hardware_connection.png" width="500" alt="Sensor Node Structure">
-  <br>
-</p>
+
 
 ## CONFIGURATION AND CODE UPLOADING
 
