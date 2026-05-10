@@ -35,10 +35,11 @@ The system architecture and its planned functionalities are outlined below:
 
 ## REQUIRED LIBRARIES
 Install these via **Library Manager** (`Ctrl + Shift + I`):
-* **Blynk** (by Volodmpyr Shymanskyy)
-* **DHT sensor library** & **Adafruit Unified Sensor** (by Adafruit)
-* **MQ135** (by Georg Krocker)
-* **Adafruit SSD1306** & **Adafruit GFX Library** (by Adafruit)
+* **Blynk** (by Volodymyr Shymanskyy) – For IoT cloud connectivity and mobile app control.
+* **ESP32Servo** (by Kevin Harrington) – Specifically designed for controlling servos on the ESP32.
+* **Adafruit SH110X** & **Adafruit GFX** – To drive the OLED (SH1106) display and handle graphics.
+* **MAX30100lib** (by Oxullo) – To read Heart Rate and SpO2 data from the MAX30100 sensor.
+* **DFRobot_DF2301Q** – For offline voice recognition processing.
 
 ## WIRING DIAGRAM
 
