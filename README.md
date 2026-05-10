@@ -26,11 +26,12 @@ The system architecture and its planned functionalities are outlined below:
 ## COMPONENTS USED
 | Component | Function |
 | --- | --- |
-| **ESP8266 NodeMCU** | Main MCU for data processing & Wi-Fi communication. |
-| **0.91" I2C OLED** | Real-time visual interface for sensor data. |
-| **DHT11 Sensor** | Monitors ambient temperature and humidity. |
-| **MQ-135 Sensor** | Detects hazardous gases and measures air quality. |
-| **Misc. Electronics** | Resistors, buttons, and LEDs for circuit interfacing. |
+| **ESP32 Module** | Main controller for system processing and Wi-Fi IoT connection. |
+| **MAX30100 Sensor** | Monitors patient Heart Rate and Blood Oxygen (SpO2) levels. |
+| **DFRobot Voice Sensor** | Handles offline voice commands for hands-free bed control. |
+| **HC-SR04 Ultrasonic** | Detects patient presence or measures bed positioning. |
+| **SG90 Servo Motors** | Controls the physical movement and angles of the bed model. |
+| **OLED Display** | Provides real-time visual feedback of vitals at the bedside. |
 
 ## REQUIRED LIBRARIES
 Install these via **Library Manager** (`Ctrl + Shift + I`):
